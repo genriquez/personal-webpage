@@ -1,0 +1,36 @@
+section.projects {
+    article {
+        @border-color:  #993;
+        border-left: 5px solid @border-color;
+        padding-right: 200px;
+        
+        &.featured {
+            border-left-color: lighten(@border-color, 20%);
+        }
+        
+        .article-links a {
+            margin-right: 20px;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;   
+            }
+        }
+    }
+    
+    article.iconforge-project {
+        background: url(../images/hammer_small.png) center right no-repeat white;
+    }
+        
+    article.mistify-project {
+        background: url(../images/mistify_small.png) center right no-repeat white;
+    }
+            
+    article.red-life-project {
+        background: url(../images/redlife_small.png) center right no-repeat white;
+    }
+            
+    article.left2die-project {
+        background: url(../images/left2die_small.png) center right no-repeat white;
+    }
+}

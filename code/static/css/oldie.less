@@ -1,0 +1,81 @@
+@import "colors.less";
+
+// IE8-
+html.oldie {
+    article {
+        // Mimic shadow with borders
+        border-bottom: 2px solid @card-shadow-color;
+        border-right: 2px solid @card-shadow-color;
+    }
+    
+    section header h2 {
+        // Better contrast due to lack of bevel effect
+        color: #aaa;   
+    }
+}
+
+@section-body-margin: 50px;
+@fixed-body-width: 1000px;
+
+// IE7-
+html.time-traveler-browser {
+    body, header.navigation-header, section.presentation, footer {
+        width: @fixed-body-width;
+    }
+    
+    section.resume, section.experience, section.projects, section.presentation .presentation-card, footer .footer-content, header nav {
+        margin-left: @section-body-margin;
+        margin-right: @section-body-margin;
+    }
+    
+    nav  {
+        ul li {
+            float: left;
+            padding: 15px;
+            border-color: @body-background-color;
+            
+            &.active {
+                border-color: black;   
+            }
+        }
+    }
+}
+
+// IE5- (yes, for realz! - with some JS magic)
+html.cave-paintings-compatible {
+    body {
+        text-align: center;
+        background: @html-background-color;
+        
+        article, h2, .presentation-card {
+            text-align: left;   
+        }
+
+        section, header.navigation-header {
+            background-color: @body-background-color;
+            width: @fixed-body-width;
+            margin-bottom: 0;
+        }
+        
+        // HTML element cannot be styled, and body will always cover the whole screen
+        section.resume, section.experience, section.presentation .presentation-card, section.projects {
+            padding-left: @section-body-margin;
+            padding-right: @section-body-margin;
+            padding-top: @section-body-margin;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    .skill-tag, .interest-tag {
+        line-height: 1.5em;
+    }
+    
+    section.projects article {
+        padding-right: 0;
+        
+        p {
+            margin-right: 200px;   
+        }
+    }
+}

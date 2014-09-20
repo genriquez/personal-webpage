@@ -1,0 +1,38 @@
+application: germanenriquezresume
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /
+  static_files: index.html
+  upload: index\.html
+
+- url: /projects
+  static_files: projects.html
+  upload: projects\.html
+
+- url: /images/(.*)
+  static_files: images/\1
+  upload: images/(.*)
+
+- url: /css/(.+)
+  static_files: css/\1
+  upload: css/(.+?)\.css
+
+- url: /fonts/(.*)
+  static_files: fonts/\1
+  upload: fonts/(.*)
+  
+- url: /js/(.*)
+  static_files: js/\1
+  upload: js/(.*)
+  
+libraries:
+- name: webapp2
+  version: "2.5.1"

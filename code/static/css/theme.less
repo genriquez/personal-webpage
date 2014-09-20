@@ -1,0 +1,205 @@
+@import "colors.less";
+
+html {
+    background: @html-background-color;
+}
+
+body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: @text-color;
+	
+	background: url(data:image/bmp;base64,Qk0+AAAAAAAAADYAAAAoAAAAAQAAAAIAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA7e3t/+fn5/8=) repeat;
+	background-color: @body-background-color;
+	
+	// Base font-size
+	font-size: 16px;
+}
+
+footer {
+	box-shadow: inset 0 20px 20px -20px #111;
+	background: url(data:image/bmp;base64,Qk1GAAAAAAAAADYAAAAoAAAAAgAAAAIAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAeHh4cHBwcP9YWFhQUFBQ/w==) repeat;
+	background-color: #333;
+	
+	.footer-content {
+	    padding-top: 50px;
+	    text-align: right;
+	    font-size: .8em;
+	    
+	    color: white;
+	}
+}
+
+section header h2 {
+	color: #ccc;    // Bevel effect
+	text-shadow: white 0px 1px 0px, #999 0px -1px 0px;
+}
+
+article {
+	background: #fff;
+	box-shadow: 0 2px 5px 1px @card-shadow-color; // Card effect
+}
+
+hr {
+    display: none;   
+}
+
+.tag(@highligh-color) {
+	background-color: #ddd;
+	
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 5px;
+	
+	border: none;
+	border-left: 4px solid @highligh-color;
+	border-radius: 5px;
+}
+	
+
+// Navigational bar
+body > header {
+	background: white;
+	background: rgba(255,255,255,.9);
+}
+
+body nav ul {
+    margin: 0;
+    padding: 0;
+    
+    background: url(../images/domain_logo_small.png) center right no-repeat;
+    
+    li {
+    	display: inline-block;
+    	border-bottom: 4px solid transparent;
+        padding: 16px;
+    
+        &:hover {
+        	border-color: #ccc;
+        }
+        
+        &.active {
+        	border-color: #333;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+
+// Presentation section (self banner and contact links)
+section.presentation {
+    box-shadow: inset 0 -20px 20px -20px #333;
+	background: url(../images/profile_header.jpg) top center #ccf;
+
+    .presentation-card {
+        @presentation-card-text-color: white;
+        
+        color: @presentation-card-text-color;   
+        text-shadow: 1px 1px 1px black;
+        
+        h1 {
+            margin-bottom: 0;   
+        }
+        
+        .subheading {
+            font-size: 1.4em;   
+        }
+        
+        ul.contact-links {
+	        list-style: none;
+	        padding: 0;
+	        
+	         li {
+            	display: inline-block;
+            	margin-right: 30px;
+            	
+            	font-size: 1.4em;
+            	font-weight: bold;
+            	
+            	a {
+                	color: @presentation-card-text-color - #110;
+                	text-decoration: none;
+                	
+                	&:hover {
+                    	color: @presentation-card-text-color;
+                    	text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1400px) {
+        background-size: 1400px;
+    }
+
+    @media (max-width: 1000px) {
+        background-position: center;
+	    background-size: 1000px;
+    }
+}
+
+// Resume section
+section.resume article {
+    border-left: 5px solid @personal-highlight-color;   
+}
+
+// Skills
+.skill-tag {
+	.tag(@experience-highlight-color);
+}
+
+//Languages
+.language {
+	display: inline-block;
+	width: 220px;
+	
+	vertical-align: top;
+	
+	border-left: 3px solid #ddd;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	
+    .title {
+    	margin-bottom: 5px;
+    	display: block;
+    	
+    	font-size: 1.4em;
+    }
+
+    .proficency {
+    	color: @additional-info-text-color;
+    	font-style: italic;
+    }
+}
+
+// Studies
+.career-title .duration {
+	color: @additional-info-text-color;
+}
+
+// Other interests
+.interest-tag {
+    .tag(lighten(@personal-highlight-color, 10%));   
+}
+
+// Work experience section
+section.experience article {
+    border-left: 5px solid darken(@experience-highlight-color, 20%);
+    
+    &.current {
+        border-left-color: @experience-highlight-color;
+    }
+    
+    h3 {
+        margin-bottom: 0px;   
+    }
+    
+    .subheading {
+    	color: @additional-info-text-color;
+    	margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,79 @@
+body {
+    margin: auto;   // Auto-center
+    padding: 0;
+    
+    & > header {    // Navigation header
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    & > header, & {
+        min-width: 400px;
+        max-width: 2000px;
+    }
+}
+
+section, header > nav, .presentation .presentation-card, footer .footer-content {
+	width: 900px;
+	margin: auto;
+
+	@media (max-width: 1000px) {
+	    width: auto;
+	    padding: 0 20px;
+	}
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+footer {
+	height: 120px;
+}
+
+section.presentation{
+	width: 100%;
+	height: 520px;
+	
+	.presentation-card {
+	    padding-top: 170px;
+    }
+    
+    @media (max-width: 1400px) {
+        height: 380px;
+    }
+
+	@media (max-width: 1000px) {
+	    font-size: .8em;
+        padding: 40px 0;
+        height: auto;
+        
+    	.presentation-card {
+    	    padding-top: 80px;
+        }
+    }
+}
+
+article {
+	padding: 20px;
+	margin: 20px auto;
+}
+
+.heading-n(@size) {
+    font-size: 2em - ((@size - 1) * 0.2);  
+    font-weight: normal;
+    
+    margin: 0;
+    margin-bottom: 30px / @size;
+}
+
+h1 { .heading-n(1); }
+h2 { .heading-n(2); }
+h3 { .heading-n(3); }
+h4 { .heading-n(4); }
+
+/* IE8- HTML5 markup compatibility */
+section, article, nav, aside , header {
+	display: block;
+}
