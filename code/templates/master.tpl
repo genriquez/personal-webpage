@@ -9,9 +9,11 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 	<title>{{title}} - ENRIQUEZ</title>
 
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/bundle.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link media="screen" rel="stylesheet" href="css/normalize.css" />
+	<link media="screen" rel="stylesheet" href="css/bundle.css" />
+	<link media="screen" rel="stylesheet" href="css/font-awesome.min.css" />
+
+	<link media="print" rel="stylesheet" href="css/print.css" />
 	
 	<!--[if lt IE 6]>
 	<link rel="stylesheet" href="css/bundle.ie5.css" />

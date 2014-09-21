@@ -1,0 +1,114 @@
+.navigation-header, footer {
+	display: none;
+}
+
+body {
+	font: 12pt Georgia, "Times New Roman", Times, serif;
+}
+
+.presentation-card {
+	@size: 150px;
+	position: relative;
+	height: @size;
+	
+	h1 {
+		font-size: 2em;
+		margin-bottom: 0;
+	}
+	
+	.subheading {
+		font-size: 1.3em;
+	}
+	
+	img.avatar {
+		position: absolute;
+		right: 10px;
+		top: 0px;
+		
+		width: @size;
+	}
+	
+	ul {
+		list-style: none;
+		
+		li {
+			&:first-child {
+				display: none;
+			}
+			
+			a {
+				text-decoration: none;
+				color: inherit;
+				
+				&::after {
+					content: ": " attr(href);
+					font-style: italic;
+				}
+
+				&[data-print]::after {
+					content: ": " attr(data-print);
+					font-style: italic;
+				}
+			}
+		}
+	}
+}
+
+hr {
+	margin: 30px 10px;
+	
+	border: none;
+	border-top: 1px solid #999;
+}
+
+section {
+	article, hr {
+		margin-left: 40px;
+		page-break-inside: avoid;
+	}
+	
+	hr {
+		margin: 20px 40px;
+	}
+}
+
+section.resume {
+	.skill-tag, .interest-tag, .language {
+		&::after {
+			content: ", ";
+		}
+		
+		&:last-child::after {
+			content: ".";
+		}
+	}
+	
+	.language {
+		display: inline;
+		
+		.proficency {
+			&::before {
+				content: "(";
+			}
+			
+			&::after {
+				content: ")";
+			}
+		}
+	}
+	
+	h4 {
+		margin-bottom: 4px;
+	}
+}
+
+section.experience {
+	h3, .subheading {
+		display: inline;
+		font-size: 1em;
+	}
+	
+	.subheading::before {
+		content: " \2013  ";
+	}
+}

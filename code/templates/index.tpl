@@ -7,10 +7,15 @@
 			<ul class="contact-links">
 				<li><a href="https://plus.google.com/117046162157318939386/posts" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a></li>
 				<li><a href="http://ar.linkedin.com/in/germanenriquez/en" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-				<li><a href="mailto:german@enriquez.ws" target="_blank"><i class="fa fa-envelope"></i> Mail</a></li>
+				<li class="print-only"><a href="http://german.enriquez.ws">Online Resume</a></li>
+				<li><a data-print="german@enriquez.ws" href="mailto:german@enriquez.ws" target="_blank"><i class="fa fa-envelope"></i> Mail</a></li>
 			</ul>
+			
+			<img src="images/profile_avatar.jpg" class="print-only avatar" />
 		</div>
 	</section>
+
+	<hr />
 
 	<section class="resume">
 		<header>
@@ -63,6 +68,8 @@
 			<h4>UADE - Universidad Argentina de la Empresa</h4>
 			<div class="career-title">BS in Software Engineering, Informatica <span class="duration">(2006 - 2011)</span></div>
 		</article>
+
+		<hr />
 
 		<article>
 			<h3>Other interests</h3>
