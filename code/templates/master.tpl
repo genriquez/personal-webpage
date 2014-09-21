@@ -1,27 +1,23 @@
 % from datetime import date
-
 <!DOCTYPE html>
 <!--[if lt IE 6]><html class="oldie time-traveler-browser cave-paintings-compatible"><![endif]-->
 <!--[if lt IE 8]><html class="oldie time-traveler-browser"><![endif]-->
 <!--[if lt IE 9]><html class="oldie"><![endif]-->
-<!--[if gte IE 9]> --><html><!--<![endif]-->
+<!--[if gt IE 9]>--><html><!--<![endif]-->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 	<title>{{title}} - ENRIQUEZ</title>
-	
+
 	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/bundle.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	
-	<!--[if gte IE 6]> --><link rel="stylesheet" href="css/bundle.css" /><!-- <![endif]-->
 	<!--[if lt IE 6]>
 	<link rel="stylesheet" href="css/bundle.ie5.css" />
 	<script src="js/ie5html5converter.js"></script>
 	<![endif]-->
-	
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	
-	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
 	<header class="navigation-header">
