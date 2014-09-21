@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from bottle import template
+from bottlepy.bottle import template
 import os.path
 import sys
 
