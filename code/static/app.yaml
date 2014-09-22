@@ -33,6 +33,10 @@ handlers:
   static_files: js/\1
   upload: js/(.*)
   
+- url: /files/(.*)
+  static_files: files/\1
+  upload: files/(.*)
+  
 libraries:
 - name: webapp2
   version: "2.5.1"

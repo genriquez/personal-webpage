@@ -35,8 +35,27 @@
 	
 	<footer>
 		<div class="footer-content">
-			Last updated<br>
-			{{date.today().isoformat()}}
+			<div class="stamps">
+				<div class="stamp printer-firendly">
+					<a class="fa fa-print stamp-icon" href="javascript:window.print();">
+					<span class="tooltip">printer friendly</span>
+					</a>
+				</div>
+
+				<div class="stamp github-repo">
+					<a class="fa fa-github stamp-icon" href="https://github.com/genriquez/personal-webpage" target="_blank">
+					<span class="tooltip">page repository</span>
+					</a>
+				</div>
+
+				<div class="stamp download-pdf">
+					<a class="fa fa-file-pdf-o stamp-icon" href="files/german_enriquez_resume.pdf" target="_blank">
+					<span class="tooltip">download pdf version</span>
+					</a>
+				</div>
+			</div>
+			
+			<span class="last-updated">Last updated: <span>{{date.today().isoformat()}}</span></span>
 		</div>
 	</footer>
 	

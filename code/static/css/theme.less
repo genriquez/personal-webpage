@@ -25,11 +25,122 @@ footer {
 	background-color: #333;
 	
 	.footer-content {
-	    padding-top: 50px;
-	    text-align: right;
+	    padding-top: 60px;
 	    font-size: .8em;
 	    
 	    color: white;
+		
+		.last-updated {
+			font-style: italic;
+			
+			span {
+				white-space: nowrap;
+			}
+		}
+		
+		.stamps {
+			@stamp-background: #ccc;
+			@stamp-icon: #333;
+			
+			@stamp-background-highlight: #333;
+			@stamp-icon-highlight: white;
+			
+			@stamp-icon-size: 40px;
+			@stamp-size: 60px;
+			
+			float: right;
+			margin-top: -(@stamp-size / 2);
+		
+			.stamp {
+				display: inline-block;
+				position: relative;
+				
+				margin-left: 20px;
+				
+				.tooltip {
+					@separation: 10px;
+					@background: white;
+				
+					display: none;
+					
+					padding: 6px;
+					background: @background;
+					color: @stamp-icon;
+					
+					margin-bottom: @separation;
+					position: absolute;
+					bottom: 100%;
+					left: 0;
+
+					text-align: center;
+					text-transform: lowercase;
+					font: 16px sans-serif;
+					
+					&::after {
+						content: " ";
+						
+						position: absolute;
+						top: 100%;
+						left: @stamp-size / 2 - @separation / 4;
+						
+						border: (@separation / 2) solid transparent;
+						border-top-color: @background;
+					}
+				}
+
+				.stamp-icon {
+					font-size: @stamp-icon-size;
+					width: @stamp-icon-size;
+					height: @stamp-icon-size;
+					text-align: center;
+					
+					border-radius: @stamp-icon-size;
+
+					background: @stamp-background;
+					border: ((@stamp-size - @stamp-icon-size) / 2) solid @stamp-background;
+					color: @stamp-icon;
+					
+					cursor: pointer;
+					text-decoration: none;
+				}
+				
+				&:hover {
+					.tooltip {
+						display: inline-block;
+					}
+				
+					.stamp-icon {
+						background: @stamp-background-highlight;
+						border-color: @stamp-background-highlight;
+						color: @stamp-icon-highlight;
+					}
+				}
+			}
+			
+			@media (max-width: 500px) {
+				@scale-factor: 0.7;
+				
+				margin-top: -(@stamp-size / 2) * @scale-factor;
+
+				.stamp {
+					margin-left: 10px;
+
+					.stamp-icon {
+						font-size: @stamp-icon-size * @scale-factor;
+						width: @stamp-icon-size * @scale-factor;
+						height: @stamp-icon-size * @scale-factor;
+						
+						.tooltip {
+							font-size: 14px;
+
+							&::after {
+								left: (@stamp-size * @scale-factor) / 2 - 3px;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

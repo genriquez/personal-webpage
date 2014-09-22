@@ -42,6 +42,39 @@ html.time-traveler-browser {
 	.navigation-header {
 		background: white;
 	}
+	
+	footer .footer-content {
+		.stamps {
+			display: inline;
+			margin: auto; 
+			
+			.stamp {
+				display: inline;
+				
+				.stamp-icon {
+					display: inline;
+					
+					width: auto;
+					height: auto;
+					border: none;
+					padding: 0;
+					
+					font-size: 16px;
+					background: none;
+					
+					.tooltip {
+						display: inline;
+						position: static;
+						margin: auto;
+						padding: auto;
+						height: auto;
+						width: auto;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 }
 
 // IE5- (yes, for realz! - with some JS magic)
@@ -50,7 +83,7 @@ html.cave-paintings-compatible {
         text-align: center;
         background: @html-background-color;
         
-        article, h2, .presentation-card {
+        article, h2, .presentation-card, .footer-content {
             text-align: left;   
         }
 
