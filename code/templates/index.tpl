@@ -11,7 +11,7 @@
 				<li><a data-print="german@enriquez.ws" href="mailto:german@enriquez.ws" target="_blank"><i class="fa fa-envelope"></i> Mail</a></li>
 			</ul>
 			
-			<img src="images/profile_avatar.jpg" class="print-only avatar" />
+			<img src="images/profile_avatar.jpg" class="print-only avatar" alt="Avatar" />
 		</div>
 	</section>
 
