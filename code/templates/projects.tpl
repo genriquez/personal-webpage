@@ -1,5 +1,10 @@
 % rebase('master.tpl', section='projects', title='Projects')
-	<section class="presentation"></section>
+	<section class="presentation projects-presentation">
+		<div class="presentation-card">
+			<h1>Personal Projects</h1>
+			<span class="subheading">Stuff I do in my free time</span>
+		</div>
+	</section>
 	
 	<section class="projects">
 		<header>
