@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 	<title>{{title}} - ENRIQUEZ</title>
 
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link media="screen" rel="stylesheet" href="css/normalize.css" />
 	<link media="screen" rel="stylesheet" href="css/bundle.css" />
 	<link media="screen" rel="stylesheet" href="css/font-awesome.min.css" />
