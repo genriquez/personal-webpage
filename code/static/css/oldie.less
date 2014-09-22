@@ -31,7 +31,6 @@ html.time-traveler-browser {
     nav  {
         ul li {
             float: left;
-            padding: 15px;
             border-color: @body-background-color;
             
             &.active {
@@ -39,6 +38,10 @@ html.time-traveler-browser {
             }
         }
     }
+	
+	.navigation-header {
+		background: white;
+	}
 }
 
 // IE5- (yes, for realz! - with some JS magic)
@@ -51,7 +54,7 @@ html.cave-paintings-compatible {
             text-align: left;   
         }
 
-        section, header.navigation-header {
+        section, .navigation-header {
             background-color: @body-background-color;
             width: @fixed-body-width;
             margin-bottom: 0;
@@ -61,12 +64,27 @@ html.cave-paintings-compatible {
         section.resume, section.experience, section.presentation .presentation-card, section.projects {
             padding-left: @section-body-margin;
             padding-right: @section-body-margin;
-            padding-top: @section-body-margin;
             margin-left: 0;
             margin-right: 0;
         }
+		
+		section.resume, section.experience, section.projects {
+            padding-top: @section-body-margin;
+		}
+		
+		header.navigation-header {
+			background: white;
+			
+			li {
+				padding: 16px;
+				
+				a {
+					padding: 0;
+				}
+			}
+		}
     }
-    
+	
     .skill-tag, .interest-tag {
         line-height: 1.5em;
     }
