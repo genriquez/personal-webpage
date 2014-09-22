@@ -38,6 +38,7 @@ footer {
 			}
 		}
 		
+
 		.stamps {
 			@stamp-background: #ccc;
 			@stamp-icon: #333;
@@ -70,18 +71,20 @@ footer {
 					margin-bottom: @separation;
 					position: absolute;
 					bottom: 100%;
-					left: 0;
+					right: 0;
 
 					text-align: center;
 					text-transform: lowercase;
 					font: 16px sans-serif;
+					
+					white-space: nowrap;
 					
 					&::after {
 						content: " ";
 						
 						position: absolute;
 						top: 100%;
-						left: @stamp-size / 2 - @separation / 4;
+						right: @stamp-size / 2 - @separation / 4;
 						
 						border: (@separation / 2) solid transparent;
 						border-top-color: @background;
@@ -134,7 +137,7 @@ footer {
 							font-size: 14px;
 
 							&::after {
-								left: (@stamp-size * @scale-factor) / 2 - 3px;
+								right: (@stamp-size * @scale-factor) / 2 - 3px;
 							}
 						}
 					}
@@ -260,9 +263,13 @@ section.presentation {
     @media (max-width: 1000px) {
         background-position: center;
 	    background-size: 1000px;
+		
+		height: 260px;
+		padding-bottom: 0;
     }
 	
 	@media (max-width: 600px) {
+		padding-bottom: 40px;
 		position: relative;
 		height: 180px;
 		
