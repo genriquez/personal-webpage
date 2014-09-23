@@ -25,9 +25,9 @@
 		<hr />
 
 		<article class="featured mistify-project">
-			<h3>Canvas Mistify</h3>
+			<h3>Canvas Mystify</h3>
 			
-			<p>A small spike trying out canvas-based rendering. Animation based on the old Windows screensaver Mistify (not an exact replica but an approximation). This project was also a test of separating most of the app logic into separate, independent modules (without using any third party libraries for dependency management such as require.js).</p>
+			<p>A small spike trying out canvas-based rendering. Animation based on the old Windows screensaver Mystify (not an exact replica but an approximation). The project goal was to test modularizing the app's logic into  independent modules (without using any third party libraries for dependency management such as require.js).</p>
 			
 			<p class="article-links">
 				<a href="https://github.com/genriquez/Canvas-Mistify" target="_blank"><i class="fa fa-github"></i> GitHub repository</a>
@@ -39,7 +39,7 @@
 		<article class="red-life-project">
 			<h3>Red Life</h3>
 			
-			<p>Basic closed cell life simulator. A grid with randomly placed resources is generated, with a starting cell cluster that consumes them to live. This project was intended to try the Ruby development language, and uses the <a href="http://www.libgosu.org/" target="_blank">Gosu library</a>.</p>
+			<p>Basic closed cell life simulator which consists in a grid with randomly placed resources, and a starting cell cluster that consumes them to live. This project was intended to try the Ruby language, and uses the <a href="http://www.libgosu.org/" target="_blank">Gosu library</a> for 2D rendering.</p>
 			
 			<p class="article-links">
 				<a href="https://github.com/genriquez/redlife" target="_blank"><i class="fa fa-github"></i> GitHub repository</a>
