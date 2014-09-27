@@ -19,7 +19,7 @@
 
 	<section class="resume">
 		<header>
-			<h2>About Me</h2>
+			<h2>About me</h2>
 		</header>
 
 		<article>
