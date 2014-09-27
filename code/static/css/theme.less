@@ -13,6 +13,7 @@ body {
 	
 	// Base font-size
 	font-size: 16px;
+	transition: font-size 400ms ease;
 	
 	@media (max-width: 400px) {
 		font-size: 14px;
@@ -58,11 +59,13 @@ footer {
 				
 				margin-left: 20px;
 				
+				
 				.tooltip {
 					@separation: 10px;
 					@background: white;
 				
-					display: none;
+					visibility: hidden;
+					opacity: 0;
 					
 					padding: 6px;
 					background: @background;
@@ -70,8 +73,10 @@ footer {
 					
 					margin-bottom: @separation;
 					position: absolute;
-					bottom: 100%;
+					bottom: 75%;
 					right: 0;
+					
+					transition: bottom 400ms ease, opacity 400ms ease, visibility 0s ease 400ms;
 
 					text-align: center;
 					text-transform: lowercase;
@@ -109,7 +114,11 @@ footer {
 				
 				&:hover {
 					.tooltip {
-						display: inline-block;
+						visibility: visible;
+						bottom: 100%;
+						opacity: 1;
+						
+						transition-delay: 0s;
 					}
 				
 					.stamp-icon {
@@ -217,7 +226,7 @@ body nav ul {
 section.presentation {
     box-shadow: inset 0 -20px 20px -20px #333;
 	background: url(../images/profile_header.jpg) top center #ccf;
-
+	
     .presentation-card {
         @presentation-card-text-color: white;
         
