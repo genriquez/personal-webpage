@@ -17,7 +17,7 @@
 			<p>JavaScript-centric web application that allows inspecting an creating icon (.ico) files. With no relevant server-side logic, the app uses client-side binary file access APIs to read and write icon files. This project was intended to try out the then new version of the <a href="http://javascriptmvc.com/">JavascriptMVC framework</a>, as well as the latest file APIs implemented by Chrome and Firefox.</p>
 			
 			<p class="article-links">
-				<a href="http://iconforge.appspot.com/" target="_blank"><i class="fa fa-external-link"></i> Live version</a>
+				<a href="http://iconforge.appspot.com/"><i class="fa fa-external-link"></i> Live version</a>
 				<a href="https://github.com/genriquez/iconforge" target="_blank"><i class="fa fa-github"></i> GitHub repository</a>
 			</p>
 		</article>
