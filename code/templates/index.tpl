@@ -2,7 +2,7 @@
 	<section class="presentation">
 		<div class="presentation-card">
 			<h1>German Ezequiel Enriquez</h1>
-			<span class="subheading">Software Engineer - Buenos Aires, Argentina</span>
+			<span class="subheading">Software Engineer - Helsinki, Finland</span>
 			
 			<ul class="contact-links">
 				<li><a href="https://plus.google.com/117046162157318939386/posts" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a></li>
@@ -26,8 +26,6 @@
 			<h3>A brief description</h3>
 			
 			<p>I'm a proactive and pragmatic developer, a coder for most of my life (both as a hobby and as a professional), and passionate about it. I'm always researching the latest technologies, learning new ways to improve the quality of my work, and willing to share my knowledge with others. I think of myself as a person who's easy to work with, a fast learner, and always ready to step up to the challenge.</p>
-
-			<p>I'm currently looking into relocating to Helsinki in Q1/Q2 2015.</p>
 		</article>
 
 		<hr />
@@ -91,17 +89,24 @@
 		</header>
 
 		<article class="current">
+			<h3>Mendor</h3>
+			<div class="subheading">Software Engineer <span>(May 2015 - Present)</span></div>
+		</article>
+		
+		<hr />
+		
+		<article>
 			<h3>Southworks</h3>
-			<div class="subheading">Software Engineer <span>(August 2012 - Present)</span></div>
+			<div class="subheading">Software Engineer <span>(August 2012 - May 2015)</span></div>
 			
 			<p>UI/Client-side technical referent. Part of the development team for the BUILD 2012 and BUILD 2013 keynote demos. Development and support of several internal Microsoft tools using the latest Microsoft technologies (i.e. Microsoft Azure Platform, Microsoft Web Stack), open source frameworks/libraries (i.e. jQuery/UI, knockout.js), and integrating with third-party services (i.e. GitHub, Browserstack).</p>
 		</article>
 
 		<hr />
 
-		<article class="current">
+		<article>
 			<h3>Microsoft</h3>
-			<div class="subheading">Vendor <span>(June 2013 - Present)</span></div>
+			<div class="subheading">Vendor <span>(June 2013 - May 2015)</span></div>
 			
 			<p>Worked on multiple projects, both as an offshore and on-site vendor: 3 weeks in Redmond and San Francisco as part of the BUILD 2013 Bing keynote demo development team, and 3 months in Redmond developing an internal support tool for third-party services integration.</p>
 		</article>
