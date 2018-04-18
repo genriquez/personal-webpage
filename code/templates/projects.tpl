@@ -11,7 +11,19 @@
 			<h2>Software Projects</h2>
 		</header>
 	
-		<article class="featured iconforge-project">
+		<article class="featured tankwars-project">
+			<h3>Caution: Falling Tanks</h3>
+			
+			<p>Local multiplayer 4-way tank brawl game developed in Unity3D. Worked as part of the development team, implementing game mechanics and UI interactions in C#.</p>
+			
+			<p class="article-links">
+				<a href="http://theuncanny.net/cft"><i class="fa fa-external-link"></i> Game website</a>
+			</p>
+		</article>
+	
+		<hr />
+	
+		<article class="iconforge-project">
 			<h3>IconFORGE</h3>
 			
 			<p>JavaScript-centric web application that allows inspecting an creating icon (.ico) files. With no relevant server-side logic, the app uses client-side binary file access APIs to read and write icon files. This project was intended to try out the then new version of the <a href="http://javascriptmvc.com/">JavascriptMVC framework</a>, as well as the latest file APIs implemented by Chrome and Firefox.</p>
@@ -24,7 +36,7 @@
 	
 		<hr />
 
-		<article class="featured mistify-project">
+		<article class="mistify-project">
 			<h3>Canvas Mystify</h3>
 			
 			<p>A small spike trying out canvas-based rendering. Animation based on the old Windows screensaver Mystify (not an exact replica but an approximation). The project goal was to test modularizing the app's logic into  independent modules (without using any third party libraries for dependency management such as require.js).</p>

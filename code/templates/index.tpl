@@ -35,10 +35,10 @@
 			
 			<div>
 				<span class="skill-tag">JavaScript</span> <span class="skill-tag">jQuery</span> <span class="skill-tag">HTML 5</span>
+				<span class="skill-tag">.NET</span> <span class="skill-tag">Xamarin</span> <span class="skill-tag">AngularJS</span>
 				<span class="skill-tag">CSS 3</span> <span class="skill-tag">Object Oriented Design</span>
 				<span class="skill-tag">JavaScript Frameworks</span> <span class="skill-tag">C#</span> <span class="skill-tag">ASP.NET</span> 
 				<span class="skill-tag">Git</span> <span class="skill-tag">Microsoft Azure</span> <span class="skill-tag">SQL</span> 
-				<span class="skill-tag">.NET</span>
 			</div>
 		</article>
 
@@ -64,7 +64,7 @@
 			<h3>Studies</h3>
 			
 			<h4>UADE - Universidad Argentina de la Empresa</h4>
-			<div class="career-title">BS in Software Engineering, Informatica <span class="duration">(2006 - 2011)</span></div>
+			<div class="career-title">Engineer's Degree, Computer Software Engineering <span class="duration">(2006 - 2011)</span></div>
 		</article>
 
 		<hr />
@@ -89,8 +89,28 @@
 		</header>
 
 		<article class="current">
+			<h3>Glucostratus</h3>
+			<div class="subheading">Software Engineer, Co-Founder <span>(Feb 2017 - Present)</span></div>
+			
+			<p>Design, implementation, and maintenance of diabetes management-related cloud services and mobile applications, and integration with third-party services for unified experiences. Working in frontend web (pure HTML/AngularJS client), backend (ASP.NET MVC webstack, and Microsoft Azure platform), mobile client (Xamarin), and service integrations based on open standards (JWT/OpenID).</p>
+		</article>
+		
+		<hr />
+
+		<article>
+			<h3>Southworks (Microsoft vendor)</h3>
+			<div class="subheading">Software Engineer <span>(Apr 2017 - May 2017)</span></div>
+			
+			<p>Worked as part of the on-site BUILD 2017 keynote demos team.</p>
+		</article>
+		
+		<hr />
+
+		<article>
 			<h3>Mendor</h3>
-			<div class="subheading">Software Engineer <span>(May 2015 - Present)</span></div>
+			<div class="subheading">Software Engineer <span>(May 2015 - Jan 2017)</span></div>
+			
+			<p>Designed, implemented, and maintained diabetes management-related cloud services. Worked in both frontend (pure HTML/AngularJS client), and backend (ASP.NET MVC webstack, and Microsoft Azure platform), including integrations to standalone devices via 3G network connection.</p>
 		</article>
 		
 		<hr />
