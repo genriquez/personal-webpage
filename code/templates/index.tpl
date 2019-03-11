@@ -2,7 +2,7 @@
 	<section class="presentation">
 		<div class="presentation-card">
 			<h1>German Ezequiel Enriquez</h1>
-			<span class="subheading">Software Engineer - Helsinki, Finland</span>
+			<span class="subheading">Software Engineer - Espoo, Finland</span>
 			
 			<ul class="contact-links">
 				<li><a href="https://plus.google.com/117046162157318939386/posts" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a></li>
@@ -98,6 +98,16 @@
 		<hr />
 
 		<article>
+			<h3>Southworks</h3>
+			<div class="subheading">Software Engineer <span>(Jul 2018 - Sep 2018)</span></div>
+			
+			<p>Testrig implementation for comparison and report of analytics results of a migrated statistics engine from legacy AS400 platform to Azure Analysis Services.</p>
+			<p>Dev team training and development of a NodeJS/React internal tool for managing ingestion, transcoding, and classification of discrete media sources into a mayor streaming platform.</p>
+		</article>
+
+		<hr />
+
+		<article>
 			<h3>Southworks (Microsoft vendor)</h3>
 			<div class="subheading">Software Engineer <span>(Apr 2017 - May 2017)</span></div>
 			
@@ -119,7 +129,7 @@
 			<h3>Southworks</h3>
 			<div class="subheading">Software Engineer <span>(August 2012 - May 2015)</span></div>
 			
-			<p>UI/Client-side technical referent. Part of the development team for the BUILD 2012 and BUILD 2013 keynote demos. Development and support of several internal Microsoft tools using the latest Microsoft technologies (i.e. Microsoft Azure Platform, Microsoft Web Stack), open source frameworks/libraries (i.e. jQuery/UI, knockout.js), and integrating with third-party services (i.e. GitHub, Browserstack).</p>
+			<p>UI/Client-side technical referent. Part of the development team for the BUILD 2012, BUILD 2013, and BUILD 2015 keynote demos. Development and support of several internal Microsoft tools using the latest Microsoft technologies (i.e. Microsoft Azure Platform, Microsoft Web Stack), open source frameworks/libraries (i.e. jQuery/UI, knockout.js), and integrating with third-party services (i.e. GitHub, Browserstack).</p>
 		</article>
 
 		<hr />
@@ -128,7 +138,7 @@
 			<h3>Microsoft</h3>
 			<div class="subheading">Vendor <span>(June 2013 - May 2015)</span></div>
 			
-			<p>Worked on multiple projects, both as an offshore and on-site vendor: 3 weeks in Redmond and San Francisco as part of the BUILD 2013 Bing keynote demo development team, and 3 months in Redmond developing an internal support tool for third-party services integration.</p>
+			<p>Worked on multiple projects, both as an offshore and on-site vendor: 3 weeks in Redmond and San Francisco as part of the BUILD 2013 Bing keynote demo development team, another 3 weeks in Redmond and San Francisco as part of the BUILD 2015 Day 1 keynote demos development team, and 3 months in Redmond developing an internal support tool for third-party services integration</p>
 		</article>
 
 		<hr />
