@@ -5,7 +5,7 @@
 			<span class="subheading">Software Engineer - Espoo, Finland</span>
 			
 			<ul class="contact-links">
-				<li><a href="https://plus.google.com/117046162157318939386/posts" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+				<li><a href="/gplus" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a></li>
 				<li><a href="http://ar.linkedin.com/in/germanenriquez/en" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
 				<li class="print-only"><a href="http://german.enriquez.ws">Online Resume</a></li>
 				<li><a data-print="german@enriquez.ws" href="mailto:german@enriquez.ws" target="_blank"><i class="fa fa-envelope"></i> Mail</a></li>

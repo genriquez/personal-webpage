@@ -17,6 +17,19 @@ handlers:
   upload: projects\.html
   secure: always
   
+- url: /gplus
+  static_files: gplus.html
+  upload: gplus\.html
+  secure: always
+
+- url: /ie-index
+  static_files: index.html
+  upload: index\.html
+
+- url: /ie-projects
+  static_files: projects.html
+  upload: projects\.html
+  
 - url: /images/(.*)
   static_files: images/\1
   upload: images/(.*)
