@@ -11,7 +11,7 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link media="screen" rel="stylesheet" href="css/normalize.css" />
-	<link media="screen" rel="stylesheet" href="css/bundle.css" />
+	<link media="screen" rel="stylesheet" href="css/bundle.css" id="theme" />
 	<link media="screen" rel="stylesheet" href="css/font-awesome.min.css" />
 
 	<link media="print" rel="stylesheet" href="css/print.css" />
@@ -21,6 +21,19 @@
 	<script src="js/ie5html5converter.js"></script>
 	<![endif]-->
 	<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+	
+	<!--[if gt IE 9]-->
+	<script>
+		// available themes: mac-os
+	
+		var customTheme = (/theme=([^&]*)/.exec(location.hash)||[])[1];
+		var themeElement = document.getElementById("theme");
+		
+		if (customTheme && themeElement) {
+			themeElement.href = "css/bundle-" + customTheme + ".css";
+		}
+	</script>
+	<!--[endif]-->
 </head>
 <body>
 	<header class="navigation-header">

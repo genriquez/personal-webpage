@@ -1,0 +1,234 @@
+.card-title() {
+	height: 20px;
+		
+	position: absolute;
+	top: 1px; left: 40px;
+		
+	background: white;
+		
+	padding: 1px 4px;
+	
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.card(@title: "") {
+	background: white;
+
+	border: 1px solid black;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	
+	position: relative;
+
+	&::before {
+		content: " ";
+		
+		display: block;
+
+		border-bottom: 1px solid black;
+		
+		background: 	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAALElEQVQoU2P4//8/A3EApBKiGkjiB/hV/4HSMEBNs9HBwKkelr4kBvz//x8AJ7i3UXjwq1IAAAAASUVORK5CYII=) 14px 5px no-repeat, 
+							url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAANCAIAAADntZOlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAHElEQVQYV2MAgf///wPxHyT2fyj7DxIbKs7AAABtKBfjYz5HNgAAAABJRU5ErkJggg==) center 5px no-repeat;
+		background-size: auto, calc(~'100% - 10px') 13px;
+		
+		width: 100%;
+		height: 23px;
+
+		position: absolute;
+		top: 0; left: 0;
+	}
+
+	&::after when not (@title = "") {
+		content: @title;
+
+		.card-title();
+	}
+}
+
+body {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAEklEQVQYV2P4//8/AwT8//8fACnkBfvvIfX4AAAAAElFTkSuQmCC);
+	font-family: monospace;
+	font-size: 14px;
+}
+
+body > header {
+	background: white;
+	border-bottom: 1px solid black;
+	
+}
+
+a {
+	color: black;
+}
+
+body > hr {
+	display: none;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	display: inline-block;
+	line-height: 1.5em;
+	
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+
+nav ul li.active a {
+	background: black;
+	color: white;
+} 
+
+.presentation {
+	text-align: center;
+
+	.presentation-card {
+		.card("vCard");
+
+		text-align: left;
+
+		margin: auto;
+		min-height: 224px;
+
+		background: url(../images/profile_avatar_1bit.png) calc(~'100% - 5px') calc(~'100% - 5px') no-repeat, white !important;
+		padding: 20px;
+		margin-top: 30px;
+		
+		display: inline-block;
+		padding-right: 280px;
+
+		span {
+			display: block;
+			margin-top: 20px;
+		}
+
+		ul {
+			margin:0;
+			padding: 0;
+			margin-top: 20px;
+		}
+
+		ul li {
+			display: block;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+
+		ul li.print-only {
+			display: none;
+		}
+
+		ul li i {
+			display: none;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 1em;
+			font-weight: normal;
+			
+			padding-top: 30px;
+		}
+
+		img {
+			display: none;
+		}
+	}
+	
+	&.projects-presentation .presentation-card {
+		background: url(../images/projects_avatar_1bit.png) calc(~'100% - 5px') calc(~'100% - 5px') no-repeat, white !important;
+	}
+}
+
+
+section ~ section {
+	.card();
+	
+	margin: auto;
+	width: 90%;
+	
+	padding: 20px;
+	margin-top: 30px;
+	
+	& > header > h2 {
+		.card-title();
+		margin: 0;
+	}
+	
+	.interest-tag, .skill-tag {
+		display: inline-block;
+		
+		padding: 2px 5px;
+		
+		border: 1px solid black;
+		border-radius: 3px;
+		border-right-width: 2px;
+		border-bottom-width: 2px;
+	}
+	
+	hr {
+		border: 0;
+		border-top: 1px dotted black;
+	}
+}
+
+.footer-content {
+	width: calc(~'90% + 40px');
+	margin: 30px auto;
+	
+	.stamps {
+		text-align: right;
+		
+		.stamp {
+			display: inline-block;
+			width: 70px;
+			text-align: center;
+			vertical-align: top;
+			
+			a {
+				text-decoration: none;
+				font-family: monospace !important;
+				
+				&::before {
+					content: " ";
+					width: 50px;
+					height: 50px;
+					display: inline-block;
+				}	
+				
+				span {
+					background: white;
+					line-height: 1.2em;
+				}
+			}
+		}
+	}
+	
+	.printer-firendly a::before {
+		background: url(../images/print_1bit.png) center center no-repeat;
+	}
+	
+	.github-repo a::before {
+		background: url(../images/git_1bit.png) center center no-repeat;
+	}
+	
+	.download-pdf a::before {
+		background: url(../images/document_1bit.png) center center no-repeat;
+	}
+
+	.last-updated {
+		background: white;
+		padding: 2px;
+	}
+}
