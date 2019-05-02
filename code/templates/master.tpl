@@ -20,20 +20,18 @@
 	<link rel="stylesheet" href="css/bundle.ie5.css" />
 	<script src="js/ie5html5converter.js"></script>
 	<![endif]-->
-	<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><script>window.oldie = true;</script><![endif]-->
 	
-	<!--[if gt IE 9]-->
 	<script>
 		// available themes: mac-os
 	
-		var customTheme = (/theme=([^&]*)/.exec(location.hash)||[])[1];
+		var customTheme = (/[?&]theme=([^&]*)/.exec(location.toString())||[])[1];
 		var themeElement = document.getElementById("theme");
 		
-		if (customTheme && themeElement) {
+		if (customTheme && themeElement && !window.oldie) {
 			themeElement.href = "css/bundle-" + customTheme + ".css";
 		}
 	</script>
-	<!--[endif]-->
 </head>
 <body>
 	<header class="navigation-header">
