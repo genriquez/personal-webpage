@@ -89,8 +89,22 @@
 		</header>
 
 		<article class="current">
+			<h3>Remedy Entertainment</h3>
+			<div class="subheading">Tools Programmer <span>(May 2019 - Present)</span></div>
+		</article>
+		
+		<hr />
+
+		<article class="current">
 			<h3>Glucostratus</h3>
-			<div class="subheading">Software Engineer, Co-Founder <span>(Feb 2017 - Present)</span></div>
+			<div class="subheading">Technical Advisor, Co-Founder <span>(May 2019 - Present)</span></div>
+		</article>
+		
+		<hr />
+
+		<article>
+			<h3>Glucostratus</h3>
+			<div class="subheading">Software Engineer, Co-Founder <span>(Feb 2017 - Apr 2019)</span></div>
 			
 			<p>Design, implementation, and maintenance of diabetes management-related cloud services and mobile applications, and integration with third-party services for unified experiences. Working in frontend web (pure HTML/AngularJS client), backend (ASP.NET MVC webstack, and Microsoft Azure platform), mobile client (Xamarin), and service integrations based on open standards (JWT/OpenID).</p>
 		</article>
